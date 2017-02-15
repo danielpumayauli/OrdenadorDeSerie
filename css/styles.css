@@ -1,0 +1,119 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background: #80ACA3;
+}
+
+.login-container {
+  height: auto;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.login-container img {
+  width: 200px;
+  margin: 0 0 20px 0;
+}
+
+.login-container p {
+  align-self: flex-start;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'Gloria Hallelujah', cursive;
+  text-align: center;
+}
+
+.login {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  margin: 0 0 10px 0;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background: #FAFAFA;
+  overflow: hidden;
+ }
+
+.login > header {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  color: #2D154A;
+  }
+
+.login > header h3{
+  font-size: 32px;
+  text-align: center;
+  padding: 10px 0 0;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'Nothing You Could Do', cursive;
+  font-family: 'Walter Turncoat', cursive;
+}
+
+.login.error_1 > header:before {
+  content: 'Este número ya es repetido';
+}
+
+.login > header h2 {
+  margin: 50px 0 10px 0;
+}
+ul li {
+	text-decoration: none;
+}
+.login-form {
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.login-input {
+  position: relative;
+  width: 100%;
+  padding: 10px 5px;
+  margin: 0 0 25px 0;
+  border: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  opacity: 1;
+
+}
+
+.login-input:focus {
+  outline: none;
+ 
+}
+
+.submit-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.login-button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 3px;
+  background: transparent;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #2D154A;
+  cursor: pointer;
+  opacity: 1;
+  animation: input_opacity 0.8s cubic-bezier(.55, 0, .1, 1);
+  transition: background 0.2s ease-in-out;
+  margin: 0 auto;
+}
+
+.login-button:hover {
+  background: #F4D673;
+}
